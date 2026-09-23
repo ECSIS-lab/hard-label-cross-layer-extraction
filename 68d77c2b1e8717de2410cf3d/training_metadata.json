@@ -1,0 +1,36 @@
+{
+  "_id": "68d77c2b1e8717de2410cf3d",
+  "dataset": {
+    "name": "MNIST",
+    "input_shape": [
+      1,
+      28,
+      28
+    ],
+    "num_classes": 10,
+    "data_dir": "data/"
+  },
+  "network": {
+    "name": "mlp",
+    "input_shape": [
+      1,
+      28,
+      28
+    ],
+    "num_classes": 10,
+    "bias": true,
+    "activation": "relu",
+    "init_method": "kaiming_normal_without_bias",
+    "width": 256,
+    "depth": 10
+  },
+  "batch_size": 512,
+  "epochs": 30,
+  "learning_rate": 1e-05,
+  "optimizer": "Adam",
+  "seed": 1,
+  "test_acc": 0.9509000182151794,
+  "test_loss": 0.15568022429943085,
+  "finish": 1,
+  "selection_query": "network.width == 256 and network.init_method == 'kaiming_normal_without_bias' and network.depth == 10"
+}
